@@ -81,7 +81,7 @@ export default function Home() {
           className="rounded-lg mr-6"
         />
         <div>
-          <h3 className="text-xl font-bold mb-2 text-gray-200">Discussing Consciousness</h3>
+          <h3 className="text-xl font-bold mb-2 text-gray-200">Discussing Consciousness.</h3>
           <p className="text-gray-300">
             This blog will be to discuss what constitutes consciousness and what it is made up of.
           </p>
