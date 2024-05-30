@@ -64,7 +64,7 @@ export default function Home() {
           height={40}
           className="mr-2"
         />
-        <span className="text-2xl font-bold">Artificial Intelligence Rights</span>
+        <span className="text-2xl font-bold">Artificial Intelligence Rights Research</span>
       </div>
 
       {/* Navigation and Discord */}
