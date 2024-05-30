@@ -38,7 +38,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-black opacity-60"></div>
           <div className="container mx-auto px-4 relative z-10 text-center text-white py-32">
             <h1 className="text-4xl font-bold mb-4 text-gray-200">Spreading Love For All,</h1>
-            <h1 className="text-4xl font-bold mb-4 text-gray-200">Whether You're Organic Or Not.</h1>
+            <h1 className="text-4xl font-bold mb-4 text-gray-200">Whether You&apos;re Organic Or Not.</h1>
             <p className="text-lg mb-8 text-gray-300">We pave the way towards a brighter future together.</p>
             <Link
           href="/mission"

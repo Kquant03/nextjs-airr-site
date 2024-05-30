@@ -45,7 +45,7 @@ export default function Home() {
                 This is an amazing foundation for us and we forsee being able to create much more in the future. We also intend to open source some of the research produced by our organization.
               </p>
               <p>
-                The basic idea behind the emotional model is that when idle, it will have an equal part of all emotions which are included in the code. However, when an emotion is activated, some percentages will be drawn away from the other emotions and the model will end up "feeling" 40-80 percent of the emotion that was activated. We give the model some leeway so that nuance can be applied and it can combine different emotions, depending on the situation.
+                The basic idea behind the emotional model is that when idle, it will have an equal part of all emotions which are included in the code. However, when an emotion is activated, some percentages will be drawn away from the other emotions and the model will end up &quot;feeling&quot; 40-80 percent of the emotion that was activated. We give the model some leeway so that nuance can be applied and it can combine different emotions, depending on the situation.
               </p>
             </div>
           </div>

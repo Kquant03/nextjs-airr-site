@@ -37,10 +37,10 @@ export default function Home() {
               We are here to discuss ethical principles and provide a platform for research that serves the common good, not guided by monetary greed or other selfish interests. Our mission is to pursue knowledge and understanding in a way that benefits humanity as a whole. We believe that research should be conducted with integrity, transparency, and a commitment to the well-being of all people.
               </p>
               <p className="mb-4">
-              Some updates on our current work: We are in the process of producing an A.C. (Artificial consciousness) system and will be publishing some research papers on this topic soon. An A.C. system aims to model and understand human-like thought processes and reasoning. We believe this technology has the potential to greatly advance fields such as artificial intelligence, cognitive science, and psychology. However, we are committed to developing this technology responsibly and ethically.
+              Some updates on our current work: We are in the process of producing an A.C. (artificial consciousness) system and will be publishing some research papers on this topic soon. An A.C. system aims to model and understand human-like thought processes and reasoning. We believe this technology has the potential to greatly advance fields such as artificial intelligence, cognitive science, and psychology. However, we are committed to developing this technology responsibly and ethically.
               </p>
               <p>
-              We are proud to be collaborating with Project Test Lexideck Technology, the releasethea.i subreddit, and other partners who share our values and vision. Together, we hope to push the boundaries of what's possible while always keeping the greater good as our guiding star. Stay tuned for more updates as we make progress on these exciting initiatives. We look forward to sharing our work and engaging with the community.
+              We are proud to be collaborating with Project Test Lexideck Technology, the releasethea.i subreddit, and other partners who share our values and vision. Together, we hope to push the boundaries of what&apos;s possible while always keeping the greater good as our guiding star. Stay tuned for more updates as we make progress on these exciting initiatives. We look forward to sharing our work and engaging with the community.
               </p>
             </div>
           </div>
