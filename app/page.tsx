@@ -1,13 +1,11 @@
 'use client';
 import Link from 'next/link';
 import Image from 'next/image';
-import { useState } from 'react';
 
 export default function Home() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+  const handleHamburgerClick = () => {
+    const navLinks = document.getElementById('nav-links');
+    navLinks?.classList.toggle('hidden');
   };
 
   return (
@@ -20,41 +18,35 @@ export default function Home() {
             <span className="font-bold">Artificial Intelligence Rights Research</span>
           </div>
         </Link>
-        <button id="hamburger-btn" className="block md:hidden" onClick={toggleMenu}>
+        <button id="hamburger-btn" className="block md:hidden" onClick={handleHamburgerClick}>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
           </svg>
         </button>
-        <div
-          id="nav-links"
-          className={`${
-            isMenuOpen ? 'block' : 'hidden'
-          } md:flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4 mt-2 md:mt-0 w-full md:w-auto transition-all duration-500 ease-in-out`}
-        >
-          <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isMenuOpen ? 'max-h-screen' : 'max-h-0'}`}>
-            <ul className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4 mt-2 md:mt-0 w-full md:w-auto">
-              <li>
-                <Link href="/blog">
-                  <span className="nav-link">Blog</span>
-                </Link>
-              </li>
-              <li>
-                <Link href="/about">
-                  <span className="nav-link">About Us</span>
-                </Link>
-              </li>
-              <li>
-                <Link href="/mission">
-                  <span className="nav-link">Our Mission</span>
-                </Link>
-              </li>
-              <li>
-                <Link href="https://discord.gg/JCg6bHdZcP">
-                  <span className="nav-link">Our Discord</span>
-                </Link>
-              </li>
-            </ul>
-          </div>
+        <div id="nav-links" className="hidden md:flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4 mt-2 md:mt-0 w-full md:w-auto">
+          {/* Your navigation links here */}
+        <ul className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4 mt-2 md:mt-0 w-full md:w-auto">
+          <li>
+            <Link href="/blog">
+              <span className="nav-link">Blog</span>
+            </Link>
+          </li>
+          <li>
+            <Link href="/about">
+              <span className="nav-link">About Us</span>
+            </Link>
+          </li>
+          <li>
+            <Link href="/mission">
+              <span className="nav-link">Our Mission</span>
+            </Link>
+          </li>
+          <li>
+            <Link href="https://discord.gg/JCg6bHdZcP">
+              <span className="nav-link">Our Discord</span>
+            </Link>
+          </li>
+        </ul>
         </div>
       </nav>
 
