@@ -91,7 +91,7 @@ export default function Home() {
   <div className="pt-0 pb-20 px-8 md:pt-0 md:pb-24 md:px-12">
         <div className="relative w-full h-[300px] sm:h-[400px] md:h-[540px] lg:w-[800px] lg:h-[600px] mx-auto">
           <Image
-            src="/mission.webp" // Replace with your thumbnail image path
+            src="/missionthumbnail.webp" // Replace with your thumbnail image path
             alt="Thumbnail"
             layout="fill"
             objectFit="contain"
