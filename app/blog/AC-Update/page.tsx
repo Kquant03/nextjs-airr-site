@@ -5,7 +5,7 @@ import Image from 'next/image';
 export default function Home() {
   const handleHamburgerClick = () => {
     const navLinks = document.getElementById('nav-links');
-    navLinks.classList.toggle('hidden');
+    navLinks?.classList.toggle('hidden');
   };
 
   return (
