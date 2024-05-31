@@ -101,7 +101,7 @@ export default function Home() {
       </div>
 
   {/* Centered Header and Body Paragraph */}
-  <div className="px-4 max-w-4xl text-center">
+  <div className="px-4 max-w-4xl mx-auto text-center">
     <h1 className="text-4xl font-bold mb-4 text-white">About Us</h1>
     <p className="text-lg text-gray-300">
       At the core of our organization lies an unwavering passion and devotion to the field of artificial intelligence. Collectively, we have invested countless thousands of hours into researching, developing, and advancing AI technologies. Our team comprises a diverse array of backgrounds, perspectives, and areas of expertise, which we view as a strength rather than a limitation. By embracing our differences and fostering an environment of collaboration and open discourse, we leverage the unique insights and approaches each individual brings to the table. This diversity of thought allows us to tackle complex challenges from multiple angles, fostering innovation and driving the field forward. We are united by our passion for this transformative technology and our commitment to harnessing its potential to create a better future.
