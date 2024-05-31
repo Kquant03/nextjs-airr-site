@@ -1,33 +1,99 @@
-import Image from "next/image";
-import Link from "next/link";
+'use client';
+import Link from 'next/link';
+import Image from 'next/image';
+import { useState } from 'react';
 
 export default function Home() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <div>
-{/* Top Navigation Bar */}
-<nav className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center bg-gray-950 text-white px-4 py-2">
-  <Link href="/">
-    <div className="flex items-center cursor-pointer">
-      <Image src="/logo.webp" alt="Company Logo" width={30} height={30} className="mr-2" />
-      <span className="font-bold">Artificial Intelligence Rights Research</span>
-    </div>
-  </Link>
-  <ul className="flex space-x-4">
-    <li>
-      <Link href="/blog">Blog</Link>
-    </li>
-    <li>
-      <Link href="/about">About Us</Link>
-    </li>
-    <li>
-      <Link href="/mission">Our Mission</Link>
-    </li>
-    <li>
-      <Link href="https://discord.gg/JCg6bHdZcP">Our Discord</Link>
-    </li>
-  </ul>
-</nav>
+      {/* Top Navigation Bar */}
+      <nav className="fixed top-0 left-0 right-0 z-50 flex flex-wrap justify-between items-center bg-gray-950 text-white px-4 py-2">
+        <Link href="/">
+          <div className="flex items-center cursor-pointer">
+            <Image src="/logo.webp" alt="Company Logo" width={30} height={30} className="mr-2" />
+            <span className="font-bold">Artificial Intelligence Rights Research</span>
+          </div>
+        </Link>
+        <button id="hamburger-btn" className="block md:hidden" onClick={toggleMenu}>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+        <div
+          id="nav-links"
+          className={`${
+            isMenuOpen ? 'block' : 'hidden'
+          } md:flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4 mt-2 md:mt-0 w-full md:w-auto transition-all duration-500 ease-in-out`}
+        >
+          <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isMenuOpen ? 'max-h-screen' : 'max-h-0'}`}>
+            <ul className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4 mt-2 md:mt-0 w-full md:w-auto">
+              <li>
+                <Link href="/blog">
+                  <span className="nav-link">Blog</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/about">
+                  <span className="nav-link">About Us</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/mission">
+                  <span className="nav-link">Our Mission</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="https://discord.gg/JCg6bHdZcP">
+                  <span className="nav-link">Our Discord</span>
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
+      <style jsx>{`
+        .nav-link {
+          position: relative;
+        }
+
+        .nav-link::before {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          bottom: -4px;
+          left: 0;
+          background-color: white;
+          visibility: hidden;
+          transform: scaleX(0);
+          transition: all 0.3s ease-in-out;
+        }
+
+        .nav-link:hover::before {
+          visibility: visible;
+          transform: scaleX(1);
+        }
+
+        @media (max-width: 768px) {
+          nav ul {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin-top: 1rem;
+          }
+
+          nav ul li {
+            margin-bottom: 1rem;
+          }
+        }
+      `}</style>
 {/* Main Content */}
 <main>
   {/* Hero Section */}
@@ -279,7 +345,7 @@ export default function Home() {
             </ul>
           </div>
 
-          <div className="mt-4 md:mt-0">
+          <div className="mt-8 md:mt-0 md:ml-8">
             <Link
               href="https://discord.gg/JCg6bHdZcP"
               className="hover:text-gray-300 flex items-center"
