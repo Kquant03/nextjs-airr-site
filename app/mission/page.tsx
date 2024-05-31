@@ -28,18 +28,22 @@ export default function Home() {
         </ul>
       </nav>
       <div className="bg-gradient-to-b from-gray-950 to-gray-800 py-16">
-      {/* Thumbnail Image */}
-      <div className="pt-0 pb-20 px-8 md:pt-0 md:pb-24 md:px-12">
-      <div className="relative w-[540px] h-[540px] mx-auto">
+{/* Thumbnail Image */}
+<div className="pt-0 pb-20 px-8 md:pt-0 md:pb-24 md:px-12">
+  <div className="relative w-full h-[300px] sm:h-[400px] md:h-[540px] lg:w-[800px] lg:h-[600px] mx-auto">
+    <div className="absolute inset-0 flex justify-center items-center">
+      <div className="relative w-full h-full lg:w-auto lg:h-auto">
         <Image
           src="/missionthumbnail.webp" // Replace with your thumbnail image path
           alt="Thumbnail"
           layout="fill"
-          objectFit="cover"
+          objectFit="contain"
           className="w-full h-full"
         />
       </div>
-      </div>
+    </div>
+  </div>
+</div>
 
         {/* Centered Header and Body Paragraph */}
         <div className="px-4 max-w-4xl mx-auto text-center">

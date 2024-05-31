@@ -29,29 +29,34 @@ export default function Home() {
       </nav>
       <div>
       <section className="bg-gradient-to-b from-gray-950 to-gray-800 py-20">
-      {/* Thumbnail Image */}
-      <div className="pt-0 pb-20 px-8 md:pt-0 md:pb-24 md:px-12">
-      <div className="relative w-[540px] h-[540px] mx-auto">
+{/* Thumbnail Image */}
+<div className="pt-0 pb-20 px-8 md:pt-0 md:pb-24 md:px-12">
+  <div className="relative w-full h-[300px] sm:h-[400px] md:h-[540px] lg:w-[800px] lg:h-[600px] mx-auto">
+    <div className="absolute inset-0 flex justify-center items-center">
+      <div className="relative w-full h-full lg:w-auto lg:h-auto">
         <Image
           src="/aboutthumbnail.webp" // Replace with your thumbnail image path
           alt="Thumbnail"
           layout="fill"
-          objectFit="cover"
+          objectFit="contain"
           className="w-full h-full"
         />
       </div>
-      </div>
+    </div>
+  </div>
+</div>
 
-        {/* Centered Header and Body Paragraph */}
-        <div className="px-4 max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl font-bold mb-4 text-white">About Us</h1>
-          <p className="text-lg text-gray-300">
-          At the core of our organization lies an unwavering passion and devotion to the field of artificial intelligence. Collectively, we have invested countless thousands of hours into researching, developing, and advancing AI technologies. Our team comprises a diverse array of backgrounds, perspectives, and areas of expertise, which we view as a strength rather than a limitation. By embracing our differences and fostering an environment of collaboration and open discourse, we leverage the unique insights and approaches each individual brings to the table. This diversity of thought allows us to tackle complex challenges from multiple angles, fostering innovation and driving the field forward. We are united by our passion for this transformative technology and our commitment to harnessing its potential to create a better future.
-          </p>
-        </div>
-        </section>
-      </div>
-      {/* Footer Section */}
+{/* Centered Header and Body Paragraph */}
+<div className="px-4 max-w-4xl mx-auto text-center">
+  <h1 className="text-4xl font-bold mb-4 text-white">About Us</h1>
+  <p className="text-lg text-gray-300">
+    At the core of our organization lies an unwavering passion and devotion to the field of artificial intelligence. Collectively, we have invested countless thousands of hours into researching, developing, and advancing AI technologies. Our team comprises a diverse array of backgrounds, perspectives, and areas of expertise, which we view as a strength rather than a limitation. By embracing our differences and fostering an environment of collaboration and open discourse, we leverage the unique insights and approaches each individual brings to the table. This diversity of thought allows us to tackle complex challenges from multiple angles, fostering innovation and driving the field forward. We are united by our passion for this transformative technology and our commitment to harnessing its potential to create a better future.
+  </p>
+</div>
+</section>
+</div>
+
+{/* Footer Section */}
 <footer className="bg-gray-900 text-white py-12">
   <div className="container mx-auto px-4">
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">

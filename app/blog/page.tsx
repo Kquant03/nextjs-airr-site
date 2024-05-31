@@ -34,15 +34,18 @@ export default function Home() {
   <div className="space-y-8">
     {/* Blog 1 */}
     <Link href="/blog/Big-Announcements">
-      <div className="flex bg-gray-700 rounded-lg shadow-md p-6 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg">
-        <Image
-          src="/celebrate.webp"
-          alt="Blog Thumbnail 1"
-          width={200}
-          height={150}
-          className="rounded-lg mr-6"
-        />
-        <div>
+      <div className="flex flex-col md:flex-row bg-gray-700 rounded-lg shadow-md p-6 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg">
+        <div className="md:w-1/3 lg:w-1/4 mb-4 md:mb-0 md:mr-6 mx-auto md:mx-0">
+          <Image
+            src="/celebrate.webp"
+            alt="Blog Thumbnail 1"
+            width={200}
+            height={150}
+            layout="responsive"
+            className="rounded-lg"
+          />
+        </div>
+        <div className="md:w-2/3 lg:w-3/4">
           <h3 className="text-xl font-bold mb-2 text-gray-200">New Big Announcements!</h3>
           <p className="text-gray-300">
             A.I.R.R. has now developed basic artificial emotions and artificial consciousness.
@@ -53,15 +56,18 @@ export default function Home() {
 
     {/* Blog 2 */}
     <Link href="/blog/AC-Update">
-      <div className="flex bg-gray-700 rounded-lg shadow-md p-6 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg mt-8">
-        <Image
-          src="/conscious.webp"
-          alt="Blog Thumbnail 2"
-          width={200}
-          height={150}
-          className="rounded-lg mr-6"
-        />
-        <div>
+      <div className="flex flex-col md:flex-row bg-gray-700 rounded-lg shadow-md p-6 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg mt-8">
+        <div className="md:w-1/3 lg:w-1/4 mb-4 md:mb-0 md:mr-6 mx-auto md:mx-0">
+          <Image
+            src="/conscious.webp"
+            alt="Blog Thumbnail 2"
+            width={200}
+            height={150}
+            layout="responsive"
+            className="rounded-lg"
+          />
+        </div>
+        <div className="md:w-2/3 lg:w-3/4">
           <h3 className="text-xl font-bold mb-2 text-gray-200">Update for Artificial Consciousness!</h3>
           <p className="text-gray-300">
             We are currently producing artificial consciousness and are engaged in a partnership!
@@ -72,15 +78,18 @@ export default function Home() {
 
     {/* Blog 3 */}
     <Link href="/blog/What-Is-Consciousness">
-      <div className="flex bg-gray-700 rounded-lg shadow-md p-6 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg mt-8">
-        <Image
-          src="/bench.webp"
-          alt="Blog Thumbnail 3"
-          width={200}
-          height={150}
-          className="rounded-lg mr-6"
-        />
-        <div>
+      <div className="flex flex-col md:flex-row bg-gray-700 rounded-lg shadow-md p-6 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg mt-8">
+        <div className="md:w-1/3 lg:w-1/4 mb-4 md:mb-0 md:mr-6 mx-auto md:mx-0">
+          <Image
+            src="/bench.webp"
+            alt="Blog Thumbnail 3"
+            width={200}
+            height={150}
+            layout="responsive"
+            className="rounded-lg"
+          />
+        </div>
+        <div className="md:w-2/3 lg:w-3/4">
           <h3 className="text-xl font-bold mb-2 text-gray-200">Discussing Consciousness.</h3>
           <p className="text-gray-300">
             This blog will be to discuss what constitutes consciousness and what it is made up of.
@@ -91,15 +100,18 @@ export default function Home() {
 
     {/* Blog 4 */}
     <Link href="/blog/First-Blog">
-      <div className="flex bg-gray-700 rounded-lg shadow-md p-6 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg mt-8">
-        <Image
-          src="/hello.webp"
-          alt="Blog Thumbnail 4"
-          width={200}
-          height={150}
-          className="rounded-lg mr-6"
-        />
-        <div>
+      <div className="flex flex-col md:flex-row bg-gray-700 rounded-lg shadow-md p-6 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg mt-8">
+        <div className="md:w-1/3 lg:w-1/4 mb-4 md:mb-0 md:mr-6 mx-auto md:mx-0">
+          <Image
+            src="/hello.webp"
+            alt="Blog Thumbnail 4"
+            width={200}
+            height={150}
+            layout="responsive"
+            className="rounded-lg"
+          />
+        </div>
+        <div className="md:w-2/3 lg:w-3/4">
           <h3 className="text-xl font-bold mb-2 text-gray-200">First Blog!</h3>
           <p className="text-gray-300">
             This blog is to discuss artificial intelligence, artificial consciousness, artificial emotions, and artificial memories.
